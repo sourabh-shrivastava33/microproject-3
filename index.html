@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="question-container">
+			<ul class="questions">
+				<li class="all">List all the food items</li>
+				<li class="same-category">
+					List all the food items with category
+					<span>
+						<select
+							name="category-option"
+							defaultValue="vegetable"
+							id="category"
+							class="select-category"
+						>
+							<option value="Vegetable">Vegetable</option>
+							<option value="Fruit">Fruit</option>
+							<option value="Protein">Protein</option>
+							<option value="Nuts">Nuts</option>
+							<option value="Grain">Grain</option>
+							<option value="Dairy">Dairy</option>
+						</select>
+					</span>
+				</li>
+				<li class="calorie-related">
+					List all the food items with calorie
+					<span>
+						<select
+							name="query-option"
+							value="lesser"
+							class="select-query"
+							id="calorie"
+						>
+							<option value="greater">greater</option>
+							<option value="lesser">Less</option>
+						</select>
+					</span>
+					than 100
+				</li>
+				<li class="high-to-low-protein">
+					List all the food items with highest protein content to lowest
+				</li>
+				<li class="low-to-high-cab">
+					List all the food items with lowest to highest cab
+				</li>
+			</ul>
+		</div>
+		<div class="table-container">
+			<table class="table">
+				<tbody class="table-body">
+					<thead>
+						<td>ID</td>
+						<td>Food Name</td>
+						<td>Calorie</td>
+						<td>Category</td>
+						<td>Proteins</td>
+						<td>cab</td>
+					</thead>
+				</tbody>
+			</table>
+		</div>
+		<script type="module" src="index.js"></script>
+	</body>
+</html>
